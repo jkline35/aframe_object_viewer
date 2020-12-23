@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Target Demo</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="oculus-go-orbit.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  
+  <body>
+    
+    
+  
+    <a-scene>
+      <a-entity id="rig" position="0 0 10">
+        <a-entity id="controller" oculus-go-controls="hand: right" oculus-go-orbit></a-entity>
+        <a-entity camera=""  position="0 1.6 0"></a-entity>
+      </a-entity>
+
+      <a-sky color="#222222"></a-sky>
+      
+          
+      <a-entity id="mb" position="0 5 0" rotation="90 0 -15" visible="true">
+        <a-obj-model
+          id="model_base"
+          src="url(https://cdn.glitch.com/fba3a862-8f17-40cd-896e-1890b19597b6%2FPleiades.obj?v=1593568940517)"
+          mtl="url(https://cdn.glitch.com/fba3a862-8f17-40cd-896e-1890b19597b6%2FPleiades.mtl?v=1593568938206)">
+        </a-obj-model>
+      </a-entity>
+                                                                                                              
+      <a-entity id="prim" position="0 0 0" rotation="0 0 0" visible="false">
+        <a-obj-model
+          id="model_base2"
+          src="url(https://cdn.glitch.com/0763b29d-16e2-4cc8-9c97-f131d6f28751%2FDSKeyhole_assembly_2_axis_0221.obj?v=1595524358911)"
+          mtl="url(https://cdn.glitch.com/0763b29d-16e2-4cc8-9c97-f131d6f28751%2FDSKeyhole_assembly_2_axis_0221.mtl?v=1595524337847)">
+        </a-obj-model>
+      </a-entity>
+      
+      <a-entity id="sq" position="0 0 0" rotation="0 0 0" visible="false">
+        <a-obj-model
+          id="model_base3"
+          src="url(https://cdn.glitch.com/0763b29d-16e2-4cc8-9c97-f131d6f28751%2Fcyldrt2.obj?v=1595482757201)"
+          mtl="url(https://cdn.glitch.com/0763b29d-16e2-4cc8-9c97-f131d6f28751%2Fcyldrt2.mtl?v=1595482754806)">
+        </a-obj-model>
+      </a-entity>
+ 
+    </a-scene>
+    
+      
+    
+  
+  </body>
+</html>
